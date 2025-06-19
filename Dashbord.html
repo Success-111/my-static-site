@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Dashboard - ScholarTrack Portal</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="school.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <button class="mobile-menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">Scholar<span>Track</span></div>
+            <div class="user-profile">
+                <div class="user-avatar">JS</div>
+                <span class="user-name">John Smith - Grade 10</span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="dashboard">
+            <aside class="sidebar" id="sidebar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="Dashbord.html" class="nav-link active"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li class="nav-item"><a href="result.html" class="nav-link"><i class="fas fa-clipboard-list"></i> Results</a></li>
+                    <li class="nav-item"><a href="schedule.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                    <li class="nav-item"><a href="subject.html" class="nav-link"><i class="fas fa-book"></i> Subjects</a></li>
+                    <li class="nav-item"><a href="performance.html" class="nav-link"><i class="fas fa-chart-line"></i> Performance</a></li>
+                    <li class="nav-item"><a href="settings.html" class="nav-link"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </aside>
+            
+            <main class="main-content">
+                <div class="welcome-section">
+                    <h1 class="welcome-title">Welcome back, John!</h1>
+                    <p class="welcome-subtitle">Here's what's happening with your academics today</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card attendance">
+                        <h3>Attendance</h3>
+                        <div class="value">94%</div>
+                        <small>18 days absent this term</small>
+                    </div>
+                    <div class="stat-card assignments">
+                        <h3>Assignments Due</h3>
+                        <div class="value">3</div>
+                        <small>Next due tomorrow</small>
+                    </div>
+                    <div class="stat-card grades">
+                        <h3>Average Grade</h3>
+                        <div class="value">B+</div>
+                        <small>82.4% overall</small>
+                    </div>
+                    <div class="stat-card events">
+                        <h3>Upcoming Events</h3>
+                        <div class="value">2</div>
+                        <small>Next: Science Fair</small>
+                    </div>
+                </div>
+                
+                <div class="quick-links">
+                    <a href="#" class="link-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Attendance</span>
+                    </a>
+                    <a href="#" class="link-card">
+                        <i class="fas fa-tasks"></i>
+                        <span>Assignments</span>
+                    </a>
+                    <a href="#" class="link-card">
+                        <i class="fas fa-chart-pie"></i>
+                        <span>Progress</span>
+                    </a>
+                    <a href="#" class="link-card">
+                        <i class="fas fa-book-open"></i>
+                        <span>Study Materials</span>
+                    </a>
+                </div>
+                
+                <div class="upcoming-events">
+                    <h2 class="section-title">
+                        Upcoming Events
+                        <a href="#">View All</a>
+                    </h2>
+                    
+                    <div class="event-item">
+                        <div class="event-date">
+                            <div class="event-day">24</div>
+                            <div class="event-month">May</div>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-title">Science Fair Submission</div>
+                            <div class="event-time">Due by 3:00 PM</div>
+                        </div>
+                    </div>
+                    
+                    <div class="event-item">
+                        <div class="event-date">
+                            <div class="event-day">28</div>
+                            <div class="event-month">May</div>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-title">Mathematics Midterm Exam</div>
+                            <div class="event-time">9:00 AM - 11:00 AM</div>
+                        </div>
+                    </div>
+                    
+                    <div class="event-item">
+                        <div class="event-date">
+                            <div class="event-day">02</div>
+                            <div class="event-month">Jun</div>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-title">Parent-Teacher Conference</div>
+                            <div class="event-time">2:00 PM - 4:00 PM</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recent-grades">
+                    <h2 class="section-title">
+                        Recent Grades
+                        <a href="#">View All</a>
+                    </h2>
+                    
+                    <div class="grade-item">
+                        <div class="grade-subject">English Essay</div>
+                        <div class="grade-score grade-Aplus">A+ (95%)</div>
+                    </div>
+                    
+                    <div class="grade-item">
+                        <div class="grade-subject">Algebra Test</div>
+                        <div class="grade-score grade-B">B (78%)</div>
+                    </div>
+                    
+                    <div class="grade-item">
+                        <div class="grade-subject">Chemistry Lab</div>
+                        <div class="grade-score grade-A">A (88%)</div>
+                    </div>
+                    
+                    <div class="grade-item">
+                        <div class="grade-subject">History Paper</div>
+                        <div class="grade-score grade-C">C (65%)</div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 ScholarTrack Academic Portal</p>
+        <p>For any queries, please contact the academic office.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const sidebar = document.getElementById('sidebar');
+        
+        menuBtn.addEventListener('click', function() {
+            sidebar.classList.toggle('active');
+        });
+        
+        // Hide menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
+                sidebar.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Performance - ScholarTrack Portal</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="school.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f6f9;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .logo span {
+      color: #3498db;
+    }
+
+    .user-profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .user-avatar {
+      width: 36px;
+      height: 36px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 15px;
+    }
+
+    .page-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .charts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .chart-card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      flex: 1 1 200px;
+    }
+
+    .chart-title {
+      font-size: 14px;
+      color: #7f8c8d;
+      margin-top: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid #ecf0f1;
+    }
+
+    th {
+      background-color: #ecf0f1;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #7f8c8d;
+      margin-top: 40px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">Scholar<span>Track</span></div>
+      <div class="user-profile">
+        <div class="user-avatar">JS</div>
+        <span>John Smith - Grade 10</span>
+      </div>
+    </div>
+  </header>
+
+
+    <div class="container">
+        <div class="dashboard">
+            <aside class="sidebar" id="sidebar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="Dashbord.html" class="nav-link active"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li class="nav-item"><a href="result.html" class="nav-link"><i class="fas fa-clipboard-list"></i> Results</a></li>
+                    <li class="nav-item"><a href="schedule.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                    <li class="nav-item"><a href="subject.html" class="nav-link"><i class="fas fa-book"></i> Subjects</a></li>
+                    <li class="nav-item"><a href="performance.html" class="nav-link"><i class="fas fa-chart-line"></i> Performance</a></li>
+                    <li class="nav-item"><a href="settings.html" class="nav-link"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </aside>
+
+            <h1 class="page-title">Academic Performance</h1>
+
+            <div class="charts">
+                <div class="chart-card">
+                    <canvas id="mathChart" width="120" height="120"></canvas>
+                    <div class="chart-title">Mathematics</div>
+                </div>
+                <div class="chart-card">
+                    <canvas id="englishChart" width="120" height="120"></canvas>
+                    <div class="chart-title">English</div>
+                </div>
+                <div class="chart-card">
+                    <canvas id="scienceChart" width="120" height="120"></canvas>
+                    <div class="chart-title">Science</div>
+                </div>
+                <div class="chart-card">
+                    <canvas id="historyChart" width="120" height="120"></canvas>
+                    <div class="chart-title">History</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <table>
+        <thead>
+            <tr>
+            <th>Subject</th>
+            <th>Average Grade</th>
+            <th>Term 1</th>
+            <th>Term 2</th>
+            <th>Final</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Mathematics</td>
+            <td>92%</td>
+            <td>88%</td>
+            <td>94%</td>
+            <td>93%</td>
+            </tr>
+            <tr>
+            <td>English</td>
+            <td>85%</td>
+            <td>82%</td>
+            <td>88%</td>
+            <td>85%</td>
+            </tr>
+            <tr>
+            <td>Science</td>
+            <td>90%</td>
+            <td>87%</td>
+            <td>91%</td>
+            <td>92%</td>
+            </tr>
+            <tr>
+            <td>History</td>
+            <td>78%</td>
+            <td>76%</td>
+            <td>80%</td>
+            <td>78%</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+
+  <footer>
+    © 2023 ScholarTrack Academic Portal — All rights reserved.
+  </footer>
+
+  <script>
+    function renderDonutChart(id, percent) {
+      new Chart(document.getElementById(id), {
+        type: 'doughnut',
+        data: {
+          datasets: [{
+            data: [percent, 100 - percent],
+            backgroundColor: ['#3498db', '#ecf0f1'],
+            borderWidth: 0
+          }]
+        },
+        options: {
+          cutout: '75%',
+          plugins: {
+            tooltip: { enabled: false },
+            legend: { display: false },
+            title: {
+              display: true,
+              text: percent + '%',
+              position: 'center',
+              color: '#2c3e50',
+              font: { size: 18, weight: 'bold' }
+            }
+          }
+        }
+      });
+    }
+    
+
+    renderDonutChart('mathChart', 92);
+    renderDonutChart('englishChart', 85);
+    renderDonutChart('scienceChart', 90);
+    renderDonutChart('historyChart', 78);
+  </script>
+</body>
+</html>

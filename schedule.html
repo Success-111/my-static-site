@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Schedule - ScholarTrack Portal</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="school.css">
+  <style>
+
+    .page-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .schedule-table thead {
+      background-color: #ecf0f1;
+    }
+
+    .schedule-table th, .schedule-table td {
+      padding: 12px 15px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .schedule-table tbody tr:nth-child(even) {
+      background-color: #f9fbfd;
+    }
+
+    .schedule-table td.subject {
+      font-weight: 500;
+      color: #34495e;
+    }
+
+    .schedule-table td.time {
+      color: #7f8c8d;
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #7f8c8d;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">Scholar<span>Track</span></div>
+      <div class="user-profile">
+        <div class="user-avatar">JS</div>
+        <span class="user-name">John Smith - Grade 10</span>
+      </div>
+    </div>
+  </header>
+
+    <div class="container">
+        <div class="dashboard">
+            <aside class="sidebar" id="sidebar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="Dashbord.html" class="nav-link active"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li class="nav-item"><a href="result.html" class="nav-link"><i class="fas fa-clipboard-list"></i> Results</a></li>
+                    <li class="nav-item"><a href="schedule.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                    <li class="nav-item"><a href="subject.html" class="nav-link"><i class="fas fa-book"></i> Subjects</a></li>
+                    <li class="nav-item"><a href="performance.html" class="nav-link"><i class="fas fa-chart-line"></i> Performance</a></li>
+                    <li class="nav-item"><a href="settings.html" class="nav-link"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </aside>
+
+            <h1 class="page-title">Weekly Schedule</h1>
+            <table class="schedule-table">
+            <thead>
+                <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Subject</th>
+                <th>Teacher</th>
+                <th>Room</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Monday</td>
+                <td class="time">8:00 AM - 9:30 AM</td>
+                <td class="subject">Mathematics</td>
+                <td>Mr. Lee</td>
+                <td>Room 201</td>
+                </tr>
+                <tr>
+                <td>Monday</td>
+                <td class="time">10:00 AM - 11:30 AM</td>
+                <td class="subject">English</td>
+                <td>Ms. Carter</td>
+                <td>Room 203</td>
+                </tr>
+                <tr>
+                <td>Tuesday</td>
+                <td class="time">9:00 AM - 10:30 AM</td>
+                <td class="subject">Science</td>
+                <td>Dr. White</td>
+                <td>Lab 1</td>
+                </tr>
+                <tr>
+                <td>Wednesday</td>
+                <td class="time">8:00 AM - 9:30 AM</td>
+                <td class="subject">History</td>
+                <td>Mr. Green</td>
+                <td>Room 104</td>
+                </tr>
+                <tr>
+                <td>Thursday</td>
+                <td class="time">11:00 AM - 12:30 PM</td>
+                <td class="subject">Geography</td>
+                <td>Ms. Hill</td>
+                <td>Room 205</td>
+                </tr>
+                <tr>
+                <td>Friday</td>
+                <td class="time">9:30 AM - 11:00 AM</td>
+                <td class="subject">Computer Science</td>
+                <td>Mr. Brooks</td>
+                <td>Lab 2</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+  </div>
+
+  <footer>
+    © 2023 ScholarTrack Academic Portal — All rights reserved.
+  </footer>
+</body>
+</html>

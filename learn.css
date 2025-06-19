@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+B
+/* Header */
+.header {
+    background-color: #007bff;
+    color: white;
+            padding: 20px;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/* Products Section */      
+.products {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Product Items */
+.product-item,
+.products > div:last-child {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+
+.product-item img,
+.products > div:last-child img {
+    width: 100%;
+    height: auto;
+    background-color: #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .product-item,
+    .products > div:last-child {
+        width: 100%;
+    }
+}

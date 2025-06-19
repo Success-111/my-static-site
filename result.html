@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Academic Results - ScholarTrack Portal</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="school.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="mobile-menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="logo">Scholar<span>Track</span></div>
+            <div class="user-profile">
+                <div class="user-avatar">JS</div>
+                <span class="user-name">John Smith - Grade 10</span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="dashboard">
+            <aside class="sidebar" id="sidebar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="Dashbord.html" class="nav-link active"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li class="nav-item"><a href="result.html" class="nav-link"><i class="fas fa-clipboard-list"></i> Results</a></li>
+                    <li class="nav-item"><a href="schedule.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                    <li class="nav-item"><a href="subject.html" class="nav-link"><i class="fas fa-book"></i> Subjects</a></li>
+                    <li class="nav-item"><a href="performance.html" class="nav-link"><i class="fas fa-chart-line"></i> Performance</a></li>
+                    <li class="nav-item"><a href="settings.html" class="nav-link"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </aside>
+            
+            <main class="main-content">
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-title">Academic Results</h1>
+                        <div class="date">Term 2, 2023 • Published: May 15, 2023</div>
+                    </div>
+                </div>
+                
+                <div class="result-summary">
+                    <div class="summary-card grade">
+                        <h3>Overall Grade</h3>
+                        <div class="value">B+</div>
+                        <small>Improved from B last term</small>
+                    </div>
+                    <div class="summary-card percentage">
+                        <h3>Percentage</h3>
+                        <div class="value">82.4%</div>
+                        <small>+3.2% from last term</small>
+                    </div>
+                    <div class="summary-card rank">
+                        <h3>Class Rank</h3>
+                        <div class="value">12/45</div>
+                        <small>Moved up 2 positions</small>
+                    </div>
+                    <div class="summary-card attendance">
+                        <h3>Attendance</h3>
+                        <div class="value">94%</div>
+                        <small>18 days absent</small>
+                    </div>
+                </div>
+                
+                <h2 class="progress-title">Subject-wise Performance</h2>
+                <div class="results-container">
+                    <table class="results-table">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Marks</th>
+                                <th>Total</th>
+                                <th>%</th>
+                                <th>Grade</th>
+                                <th>Remarks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>85</td>
+                                <td>100</td>
+                                <td>85%</td>
+                                <td class="grade-A">A</td>
+                                <td>Excellent problem-solving</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>78</td>
+                                <td>100</td>
+                                <td>78%</td>
+                                <td class="grade-B">B+</td>
+                                <td>Needs work on chemistry</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>92</td>
+                                <td>100</td>
+                                <td>92%</td>
+                                <td class="grade-Aplus">A+</td>
+                                <td>Outstanding</td>
+                            </tr>
+                            <tr>
+                                <td>History</td>
+                                <td>65</td>
+                                <td>100</td>
+                                <td>65%</td>
+                                <td class="grade-C">C</td>
+                                <td>Needs improvement</td>
+                            </tr>
+                            <tr>
+                                <td>Geography</td>
+                                <td>88</td>
+                                <td>100</td>
+                                <td>88%</td>
+                                <td class="grade-A">A</td>
+                                <td>Very good understanding</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="progress-container">
+                    <h3 class="progress-title">Overall Progress</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <p>You're performing better than 78% of your class. Keep up the good work!</p>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="btn btn-primary"><i class="fas fa-download"></i> Download</button>
+                    <button class="btn btn-outline"><i class="fas fa-print"></i> Print</button>
+                    <button class="btn btn-outline"><i class="fas fa-chart-bar"></i> Analytics</button>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 ScholarTrack Academic Portal</p>
+        <p>For any queries, please contact the academic office.</p>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const sidebar = document.getElementById('sidebar');
+        
+        menuBtn.addEventListener('click', function() {
+            sidebar.classList.toggle('active');
+        });
+        
+        // Hide menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
+                sidebar.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
